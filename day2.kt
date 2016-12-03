@@ -25,6 +25,8 @@ fun execute(pad: String, instructions: List<String>, start: Point): String {
 }
 
 fun main(args: Array<String>) {
+    println("Taking input from stdin, Ctrl-D to stop")
+    
     val instructions = mutableListOf<String>()
     while (true) {
         val line = readLine() ?: break
