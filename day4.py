@@ -23,8 +23,9 @@ def decrypt(line, rounds):
             output += c
     return output.replace("-", " ")
 
-
 sector_total = 0
+
+print("Taking input from stdin, Ctrl-Z to stop")
 for line in fileinput.input():
     name, sector, checksum = r.search(line).groups()
     sector = int(sector)
