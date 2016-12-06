@@ -29,4 +29,4 @@ for salt in itertools.count():
     if salt % 50000 == 0:
         progress_print(part1, part2)
 
-print(part1[:8], "".join(part2))
+progress_print(part1, part2)
