@@ -1,6 +1,3 @@
-import cProfile
-
-
 def next_row(previous_row):
     last = ["."] + previous_row + ["."]
     return ["^" if last[i] != last[i + 2] else "." for i in range(len(previous_row))]
